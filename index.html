@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FrameCut – Dein Videoschnitt-Service</title>
+  <link rel="icon" type="image/png" href="a801b51d-737c-44fc-8a69-fd85da4a2020.png" sizes="16x16">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+</head>
+<body class="bg-black text-white font-sans overflow-x-hidden">
+
+ <!-- NAVBAR -->
+<nav class="w-full px-6 py-4 flex justify-end text-white">
+  <a href="https://frameflow.pages.dev" target="_blank" class="hover:text-indigo-400 font-semibold transition duration-300">
+    Zu FrameFlow
+  </a>
+</nav>
+
+
+  <!-- HERO SECTION -->
+  <section class="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-b from-black to-gray-900 pt-20" id="hero">
+    <!-- Inhalt bleibt gleich -->
+
+    <h1 class="text-5xl md:text-7xl font-bold mb-6">FrameCut</h1>
+    <p class="text-xl md:text-2xl mb-8">Professioneller Videoschnitt für YouTube & Co.</p>
+    <a href="#auftrag" class="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-3 px-8 rounded-full transition duration-300">Schnitt anfragen</a>
+  </section>
+
+  <!-- UNSERE LEISTUNGEN -->
+  <section class="py-20 bg-gray-900" id="leistungen">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-12">Unsere Leistungen</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-gray-800 p-8 rounded-2xl hover:scale-105 transition transform duration-300">
+          <h3 class="text-2xl font-semibold mb-4">YouTube Videoschnitt</h3>
+          <p>Hochwertiger Schnitt mit Musik, Effekten und Tempo – abgestimmt auf deine Zielgruppe.</p>
+        </div>
+        <div class="bg-gray-800 p-8 rounded-2xl hover:scale-105 transition transform duration-300">
+          <h3 class="text-2xl font-semibold mb-4">Shorts & Reels</h3>
+          <p>Schnelle, virale Clips für Instagram, TikTok & YouTube Shorts.</p>
+        </div>
+        <div class="bg-gray-800 p-8 rounded-2xl hover:scale-105 transition transform duration-300">
+          <h3 class="text-2xl font-semibold mb-4">Basic Schnitt</h3>
+          <p>Einfacher, aber sauberer Schnitt – ideal für Podcasts oder Tutorials.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABLAUF -->
+  <section class="py-20 bg-black" id="ablauf">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-12">So funktioniert's</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="p-6">
+          <div class="text-5xl mb-4">📥</div>
+          <h3 class="text-2xl font-semibold mb-2">1. Anfrage</h3>
+          <p>Du beschreibst dein Video & Ziel – wir kümmern uns um den Rest.</p>
+        </div>
+        <div class="p-6">
+          <div class="text-5xl mb-4">✂️</div>
+          <h3 class="text-2xl font-semibold mb-2">2. Schnitt</h3>
+          <p>Wir schneiden dein Video professionell – schnell & kreativ.</p>
+        </div>
+        <div class="p-6">
+          <div class="text-5xl mb-4">📤</div>
+          <h3 class="text-2xl font-semibold mb-2">3. Lieferung</h3>
+          <p>Fertiges Video per Link – in Full HD oder 4K, direkt an dich geliefert.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="py-20 bg-gray-900" id="portfolio">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-12">Beispiele</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="group relative overflow-hidden rounded-2xl shadow-lg">
+          <video autoplay muted loop playsinline class="w-full h-64 object-cover">
+            <source src="cut-example1.mp4" type="video/mp4" />
+            Dein Browser unterstützt kein HTML5-Video.
+          </video>
+          <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-4">
+            <p class="text-white text-lg">YouTube Schnitt</p>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-2xl shadow-lg">
+          <video autoplay muted loop playsinline class="w-full h-64 object-cover">
+            <source src="cut-reel.mp4" type="video/mp4" />
+            Dein Browser unterstützt kein HTML5-Video.
+          </video>
+          <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-4">
+            <p class="text-white text-lg">Shorts & Reels</p>
+          </div>
+        </div>
+        <div class="group relative overflow-hidden rounded-2xl shadow-lg">
+          <video autoplay muted loop playsinline class="w-full h-64 object-cover">
+            <source src="cut-basic.mp4" type="video/mp4" />
+            Dein Browser unterstützt kein HTML5-Video.
+          </video>
+          <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 p-4">
+            <p class="text-white text-lg">Basic Schnitt</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUFTRAGSINFOS -->
+  <section class="py-20 bg-black" id="auftrag">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-8">Schnitt anfragen</h2>
+      <p class="text-xl">Die Anfrage folgt bitte per E-Mail an <a class="text-indigo-400 underline" href="mailto:frameflow.management@gmail.com">frameflow.management@gmail.com</a> mit dem Betreff <strong>„VideoCut Anfrage“</strong>.</p>
+    </div>
+  </section>
+
+  <!-- ÜBER UNS -->
+  <section class="py-20 bg-gray-900" id="about">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-8">Über uns</h2>
+      <p class="text-xl mb-8">Wir sind ein junges Team mit Fokus auf schnellen, modernen und zielgerichteten Videoschnitt. Egal ob YouTuber oder Marke – wir bringen dein Video auf den Punkt.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-10 bg-black text-center text-gray-400">
+    <p>© 2025 FrameCut. Alle Rechte vorbehalten.</p>
+    <div class="flex justify-center mt-4 space-x-6">
+      <a href="#" class="hover:text-white">Instagram</a>
+      <a href="#" class="hover:text-white">YouTube</a>
+      <a href="kontakt.html" class="hover:text-white">Kontakt</a>
+    </div>
+  </footer>
+
+  <!-- ANIMATIONEN -->
+  <script>
+    ScrollReveal().reveal('#hero h1, #hero p, #hero a', { delay: 300, duration: 1500, origin: 'bottom', distance: '50px', reset: false });
+    ScrollReveal().reveal('#leistungen h2, #leistungen div', { interval: 200, delay: 200 });
+    ScrollReveal().reveal('#ablauf h2, #ablauf div', { interval: 200, delay: 200 });
+    ScrollReveal().reveal('#portfolio h2, #portfolio div', { interval: 200, delay: 200 });
+    ScrollReveal().reveal('#auftrag h2, #auftrag p', { delay: 300, duration: 1200 });
+    ScrollReveal().reveal('#about h2, #about p', { delay: 300, duration: 1200 });
+
+    gsap.from("section", {
+      opacity: 0,
+      duration: 1,
+      y: 50,
+      stagger: 0.3
+    });
+  </script>
+
+</body>
+</html>
